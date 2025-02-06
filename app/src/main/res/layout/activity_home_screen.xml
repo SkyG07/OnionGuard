@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC">
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Bottom Bar -->
+
+            <!-- Disease Images -->
+
+            <!-- News Image -->
+
+            <!-- Search Bar -->
+
+            <View
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:background="#4D4D4D"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imgDownyMildew"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_marginBottom="41dp"
+                android:background="@drawable/image_border"
+                android:onClick="openDownyMildewPage"
+                app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgLeafBlight"
+                app:layout_constraintTop_toBottomOf="@+id/DownyText"
+                app:srcCompat="@drawable/downym_onion" />
+
+
+            <ImageView
+                android:id="@+id/imgPurpleBlotch"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:background="@drawable/image_border"
+                android:onClick="openPurpleBlotchPage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgPowderyMildew"
+                app:layout_constraintTop_toBottomOf="@+id/PurpleText"
+                app:srcCompat="@drawable/purpleb_onion" />
+
+            <ImageView
+                android:id="@+id/imgLeafBlight"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_marginBottom="41dp"
+                android:background="@drawable/image_border"
+                android:onClick="openLeafBlightPage"
+                app:layout_constraintBottom_toTopOf="@+id/bottomBar"
+                app:layout_constraintEnd_toStartOf="@+id/imgDownyMildew"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/LeafText"
+                app:srcCompat="@drawable/leafb_onion"
+                tools:srcCompat="@drawable/leafb_onion" />
+
+            <ImageView
+                android:id="@+id/imgPowderyMildew"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:background="@drawable/image_border"
+                android:onClick="openPowderyMildewPage"
+                app:layout_constraintEnd_toStartOf="@+id/imgPurpleBlotch"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/PowderyText"
+                app:srcCompat="@drawable/powder_onion" />
+
+            <ImageView
+                android:id="@+id/imgNews"
+                android:layout_width="230dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/image_border"
+                android:onClick="openNewsPage"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/searchView"
+                app:srcCompat="@drawable/news_onion" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="295dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="84dp"
+                android:layout_marginEnd="58dp"
+                android:background="@drawable/search_view_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="140dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/image_border"
+                android:text="Fall armyworm (Spodoptera frugiperda) is a devastating invasive crop pest. Since its arrival in the Philippines in 2016, farmers have struggled to control it."
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imgNews"
+                app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="81dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/home_icon_desc"
+                android:onClick="openHomePage"
+                android:src="@drawable/ic_home"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/camera_icon"
+                android:layout_width="83dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="164dp"
+                android:contentDescription="@string/camera_icon_desc"
+                android:onClick="openScannerPage"
+                android:src="@drawable/ic_camera"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/history_icon"
+                android:layout_width="81dp"
+                android:layout_height="77dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/history_icon_desc"
+                android:onClick="openHistoryPage"
+                android:src="@drawable/ic_history"
+                android:tint="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/PowderyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="99dp"
+                android:text="Powdery Mildew"
+                app:layout_constraintEnd_toStartOf="@+id/PurpleText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgNews" />
+
+            <TextView
+                android:id="@+id/PurpleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="65dp"
+                android:text="Purple Blotch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/PowderyText"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/LeafText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="114dp"
+                android:text="Leaf Blight"
+                app:layout_constraintEnd_toStartOf="@+id/DownyText"
+                app:layout_constraintHorizontal_bias="0.6"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imgPowderyMildew" />
+
+            <TextView
+                android:id="@+id/DownyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="65dp"
+                android:text="Downy Mildew"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/LeafText"
+                app:layout_constraintTop_toBottomOf="@+id/imgPurpleBlotch" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="26dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="1dp"
+                app:layout_constraintBottom_toTopOf="@+id/searchView"
+                app:layout_constraintEnd_toStartOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/onionlogo"
+                />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="175dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginEnd="112dp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="ONIONGUARD"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</LinearLayout>

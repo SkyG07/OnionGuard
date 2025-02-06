@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ONION</string>
+    <string name="camera_icon_desc">Camera Icon</string>
+    <string name="history_icon_desc">History Icon</string>
+    <string name="home_icon_desc">Home Icon</string>
+</resources>

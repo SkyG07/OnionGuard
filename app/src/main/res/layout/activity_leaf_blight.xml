@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFCC"
+    tools:context=".LeafBlightActivity">
+
+    <include
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="26dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="102dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchView"
+        app:layout_constraintEnd_toStartOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941"
+        app:srcCompat="@drawable/onionlogo" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="175dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="112dp"
+        android:fontFamily="@font/libre_baskerville_bold"
+        android:text="ONIONGUARD"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="295dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="58dp"
+        android:background="@drawable/search_view_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="389dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/leafblight" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="392dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="12dp"
+        android:text="Information: Leaf blight, caused by Cladosporium allii, appears as water-soaked lesions that turn yellow and brown, eventually affecting the entire leaf. This disease can reduce photosynthesis, leading to poor plant growth. It is most common during wet weather."
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="386dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="252dp"
+        android:text="Treatment:  Fungicides: Apply copper-based fungicides or other recommended fungicides to reduce the spread. Cultural Practices: Improve air circulation by spacing plants properly and removing infected plant material. Avoid watering the leaves directly. Resistant Varieties: Choose resistant onion varieties when possible."
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="262dp"
+        android:text="Leaf Blight"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

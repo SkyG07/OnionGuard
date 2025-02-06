@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5">
+
+    <!-- Gray background bar for design -->
+
+    <!-- Camera icon in the center bottom -->
+
+    <View
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#4D4D4D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="813dp" />
+
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        android:contentDescription="@string/camera_icon_desc"
+        android:src="@drawable/ic_camera"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- History icon on the bottom right -->
+    <ImageView
+        android:id="@+id/history_icon"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
+        android:contentDescription="@string/history_icon_desc"
+        android:src="@drawable/ic_history"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp" />
+
+    <!-- Home icon on the bottom left -->
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:contentDescription="@string/home_icon_desc"
+        android:onClick="openHomePage"
+        android:src="@drawable/ic_home"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

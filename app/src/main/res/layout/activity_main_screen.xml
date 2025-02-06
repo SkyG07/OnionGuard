@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Gray background bar for design -->
+    <View
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="#4D4D4D" />
+
+    <!-- Camera icon in the center bottom -->
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="83dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/camera_icon_desc"
+        android:src="@drawable/ic_camera"
+        android:tint="@android:color/white" />
+
+    <!-- History icon on the bottom right -->
+    <ImageView
+        android:id="@+id/history_icon"
+        android:layout_width="81dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/history_icon_desc"
+        android:src="@drawable/ic_history"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/home_icon"
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="-2dp"
+        android:contentDescription="@string/home_icon_desc"
+        android:onClick="openHomePage"
+        android:src="@drawable/ic_home"
+        android:tint="@android:color/white" />
+
+</RelativeLayout>

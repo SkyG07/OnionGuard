@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Scrollable content -->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="409dp"
+        android:layout_height="806dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFCC"
+            tools:context=".PowderyMildewActivity">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="26dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/onionlogo" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="175dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/libre_baskerville_bold"
+                android:text="ONIONGUARD"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="295dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="64dp"
+                android:background="@drawable/search_view_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="389dp"
+                android:layout_height="225dp"
+                android:layout_marginTop="132dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/powder_onion" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Powdery Mildew"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Information: Powdery mildew is a fungal disease caused by Erysiphe species. It typically appears as white, powdery spots on the upper side of onion leaves. Over time, these spots enlarge and may cover the entire leaf surface, causing the leaves to turn yellow and eventually die. The disease thrives in warm, dry conditions and can spread rapidly under such conditions."
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="409dp"
+                android:layout_height="820dp"
+                android:layout_marginTop="12dp"
+                android:text="Treatment:  Fungicides: Apply fungicides such as sulfur or potassium bicarbonate to control powdery mildew. Ensure proper coverage of the plant, especially the undersides of leaves. Cultural Practices: Space plants properly to improve air circulation. Remove infected leaves and practice crop rotation to reduce the buildup of the fungus. Organic Methods: Neem oil or a mixture of water and baking soda can also help manage the disease organically. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- Fixed bottom navigation -->
+    <include
+        android:id="@+id/bottom_navigation"
+        layout="@layout/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
